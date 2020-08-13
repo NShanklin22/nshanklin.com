@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Personal Website and blog, practice HTML,CSS, Java learning">
+    <meta name="keywords" content="Java, HTML, CSS, Personal, Blog, Learning, Engineering">
+    <meta name="author" content="Nathaniel Shanklin">
+    <title>Nathaniel Shanklin | Welcome</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <header>
+      </div>
+        <div class="container">
+          <div id="branding">
+            <h1><span class="highlight">Nathaniel</span> Shanklin</h1>
+          </div>
+          <nav>
+            <ul>
+              <li class="current"><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'blog' %}">Blog</a></li>
+              <li><a href="{% url 'learning' %}">Learning</a></li>
+              <li><a href="{% url 'project' %}">Project</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <section id="showcase">
+      <div class="container">
+    </div>
+    </section>
+<!--
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Neweletter</h1>
+        <form>
+          <input type="email" placeholder="Enter your Email">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+-->
+    <div class="dark">
+    <h1 class="box">About Me</h1>
+    <p>	&nbsp;&nbsp;&nbsp;My name is Nathaniel Shanklin, I graduated college in 2017 with a bachelors degree in Engineering Physics and Computer Science minor. Since then I have worked in a few different positions
+    including service technician, restaurant management, and most recently as a Quality Engineer in a plastics injection facility. It was in this role that I discovered how much
+    my broad range of skills could be used in a business and advanced manufacturing setting. As the quality engineer I was able to bring together computer science, customer service, data analytics,
+    and engineering expertise to help my employer stay competitive and insure good-paying jobs for all the families working there.
+    <br>&nbsp;&nbsp;&nbsp;The two things that I love doing the most are solving problems and learning new things. Recently I've pushed myself to expand my knowledge of computer science by studying HTML, CSS, Java Script, and Python data analytics.
+    There are so many possibilities with data analytics and automation that I hope to move my carreer into a field that utilizes one or both of these skills. My three main areas of study are computer science, electronics, and mechanical engineering. All of which really interest me, especially
+    the ways in which they merge together in our society as we head into the fourth industrial revolution.
+      In my free time I enjoy hiking, running, playing video games with friends, and checking out new movies and tvs shows with my girlfriend. I am a native of Indiana but have been living in Nebraska going on two years
+    now while my girlfriend has been working on her masters degree. Soon we hope to move back to Indiana in order to be closer to our parents and I look forward to all the new oppertunities ahead.</p>
+    </div>
+
+    <footer>
+      <p>NShanklin, Copyright &copy; 2020</p>
+    </footer>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
+  </body>
+</html>

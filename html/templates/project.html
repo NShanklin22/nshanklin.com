@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and Professional Web Design">
+    <meta name="keywords" content="web design,professional web design, professional">
+    <meta name="author" content="Nathaniel Shanklin">
+    <title>Nathaniel Shanklin | Projects</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Nathaniel</span> Shanklin</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'learning' %}">Learning</a></li>
+            <li class="current"><a href="{% url 'project' %}">Project</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Self improvement Web App</h1>
+          <p>This is a prototype of the self improvement web app which mimics what I have been doing in google docs for approximately 4 months now but utilizes python and/or javascript.</p>
+          <button onclick="button()">Change Color</button>
+          <button onclick="button2()">Change Color Back</button>
+
+          <div id="data_box">
+            <p id="data_text">Some text</p>
+          </div>
+
+        </article>
+
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>Nathaniel Shanklin, Copyright &copy; 2020</p>
+    </footer>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
+  </body>
+</html>

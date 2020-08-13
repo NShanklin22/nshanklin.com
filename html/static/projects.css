@@ -1,0 +1,22 @@
+body{
+  background-color: lightblue;
+}
+
+h1{
+  text-align: center;
+  font-style: italic;
+  border-style: dashed;
+  border-width: 5px;
+  border-color: red;
+  margin: 50px;
+}
+
+p{
+  text-align: center;
+  font-size: 25px;
+}
+
+button{
+  position: relative;
+  left: 47.5%;
+}

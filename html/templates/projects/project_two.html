@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'projects.css' %}">
+  </head>
+  <body>
+    <h1>This is Project 2, using a button to change text</h1>
+    <p id="project_two">Press the button to see the change</p>
+    <button onclick="button1()">Change text</button>
+  </body>
+  <script type="text/javascript" src="{% static 'projects.js' %}"></script>
+</html>
